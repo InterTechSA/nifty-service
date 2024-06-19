@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "nodemon app.js",
-    "vercel-build": "echo starting build"
+    "build": "npm install"
   },
   "engines": {
     "node": "20.x"
