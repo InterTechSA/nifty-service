@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build": "npm install",
+    "build": "npm install && npm run swagger-autogen",
     "dev": "nodemon app.js",
     "swagger-autogen": "node ./docs/swagger.js"
   },
