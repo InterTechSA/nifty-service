@@ -15,6 +15,10 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use("/", routes);
 
+app.get('/test', (req,res) => {
+  res.json({message: "Testing Testing"})
+});
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
